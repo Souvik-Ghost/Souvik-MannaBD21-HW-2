@@ -1,10 +1,8 @@
-const express = require("express");
-const app = express();
-const port = 3000;
-const cors = require("cors")
-app.use(cors());
+let express = require('express')
+let app = express()
+let port = 3000;
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+  console.log(`Example app listening at http://localhost:${port}`)
 });
 
 let githubPublicData = {
